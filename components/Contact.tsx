@@ -61,7 +61,7 @@ function Contact() {
           <Box
             ref={form}
             component="form"
-            autoComplete="off"
+           
             className='contact-form'
           >
             <div className='form-flex'>
@@ -79,17 +79,18 @@ function Contact() {
               />
               <TextField
                 required
-                id="outlined-required"
-                label="Email / Phone"
+                // id="outlined-required"
+                // label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
                 error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
+                // helperText={emailError ? "Please enter your email or phone number" : ""}
               />
             </div>
+            <TextField id="outlined-basic" label="Outlined" variant="outlined" />
             <TextField
               required
               id="outlined-multiline-static"
